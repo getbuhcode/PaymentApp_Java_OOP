@@ -5,7 +5,7 @@ Click on the link below to check out the better resolution the payment UML diagr
 
 [Payment UML Diagram](Payment_UML_Diagram.pdf)
 
-[embed]https://github.com/getbuhcode/PaymentApp_Java_OOP/Payment_UML_Diagram.pdf[/embed]
+<embed src="/Payment_UML_Diagram.pdf" type="application/pdf">
 
 ![Payment UML Diagram](Payment_UML_Diagram.pdf)
 
