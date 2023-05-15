@@ -14,7 +14,7 @@ GenernalPayment class *implements* the Payment Interface to inherit the Payment 
 While the McDonaldsPayment class and KFCPayment class *extends* the GeneralPayment class to inherits the GeneralPayment methods.
 
 ### Polymorphism:
-Each payment method ( *payCash()* & *payCreditCard()* ) in the GeneralPayment class is repeated with different signatures. This is to allow the individual fastfood restaurant to cater to their own implementations.
+Each payment method ( *payCash()* & *payCreditCard()* ) in the GeneralPayment class is repeated with different signatures. This is to allow each individual fastfood restaurant to cater to their own implementations.
 
 The McDonaldsPayment and KFCPayment are two different forms of the GeneralPayment.
 
