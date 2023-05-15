@@ -1,18 +1,9 @@
 # PaymentApp_Java_OOP
 This is a simple payment application that shows my understanding on the concepts of OOP in Java programming language.
 
-Click on the link below to check out the better resolution the payment UML diagram.
+Click on the link below to view the better resolution payment UML diagram.
 
 [Payment UML Diagram](Payment_UML_Diagram.pdf)
 
-<embed src="/Payment_UML_Diagram.pdf" type="application/pdf">
-
-xfun::embed_file("Payment_UML_Diagram.pdf")
-
-<object data="https://github.com/getbuhcode/PaymentApp_Java_OOP/Payment_UML_Diagram.pdf" type="application/pdf" width="700px" height="700px">
-    <embed src="https://github.com/getbuhcode/PaymentApp_Java_OOP/Payment_UML_Diagram.pdf">
-    </embed>
-</object>
-
-![Payment UML Diagram](Payment_UML_Diagram.pdf)
+![Payment UML Diagram](Payment_UML_Diagram.jpg)
 
