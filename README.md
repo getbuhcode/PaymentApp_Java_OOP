@@ -4,3 +4,5 @@ This is a simple payment application that shows my understanding on the concepts
 Click on the link below to check out the payment UML diagram.
 
 [Payment UML Diagram](Payment_UML_Diagram.pdf)
+
+![Payment UML Diagram](Payment_UML_Diagram.jpg)
