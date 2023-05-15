@@ -7,5 +7,7 @@ Click on the link below to check out the better resolution the payment UML diagr
 
 <embed src="/Payment_UML_Diagram.pdf" type="application/pdf">
 
+xfun::embed_file("Payment_UML_Diagram.pdf")
+
 ![Payment UML Diagram](Payment_UML_Diagram.pdf)
 
