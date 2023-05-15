@@ -6,62 +6,87 @@ public class KFCPaymentKiosk extends KFCPayment {
     private static float totalPayableAmount;
     private static ArrayList<ValueMeal> orderList = new ArrayList<>();
 
+    public static void selectMeal(Scanner scan) {
+
+        // Print meal selections
+        System.out.println("Please input the number of the meal you would like:");
+        System.out.println("1 : 2pcs Meal");
+        System.out.println("2 : 3pcs Meal");
+        System.out.println("3 : Shrooms Burger Meal");
+
+        // Get user order
+        int mealSelection = scan.nextInt();
+
+        // Switch case for different value meals
+        switch (mealSelection) {
+
+            case 1:
+                ValueMeal _2pcsChickenMeal = new ValueMeal(
+                        "2pcs Chicken",
+                        "Fries",
+                        "Coke",
+                        "2pcsChickenMeal",
+                        11.30F);
+                orderList.add(_2pcsChickenMeal);
+                break;
+
+            case 2:
+                ValueMeal _3pcsChickenMeal = new ValueMeal(
+                        "3pcs Chicken",
+                        "Fries",
+                        "Coke",
+                        "3pcsChickenMeal",
+                        13.70F);
+                orderList.add(_3pcsChickenMeal);
+                break;
+
+            case 3:
+                ValueMeal shroomsBurgerMeal = new ValueMeal(
+                        "Shrooms Burger",
+                        "Fries",
+                        "Coke",
+                        "ShroomsBurgerMeal",
+                        6.90F);
+                orderList.add(shroomsBurgerMeal);
+                break;
+        }
+    }
+
+    public static void continueOrderMessage() {
+        System.out.println("Would you like to continue ordering? (y/n)");
+    }
+
     public static void main(String[] args) {
 
         // Instantiate a Scanner for user input
         Scanner scan = new Scanner(System.in);
 
-        // Get user order
+        // Provide user with meal selections
+        selectMeal(scan);
+
+        // Ask if user wants to continue ordering
+        continueOrderMessage();
+        scan.nextLine();
+
         while (true) {
 
-            System.out.println("Please input the number of the meal you would like:");
-            System.out.println("1 : 2pcs Meal");
-            System.out.println("2 : 3pcs Meal");
-            System.out.println("3 : Shrooms Burger Meal");
-
-            int mealSelection = scan.nextInt();
-
-            // Switch case for different value meals
-            switch (mealSelection) {
-
-                case 1:
-                    ValueMeal _2pcsChickenMeal = new ValueMeal(
-                            "2pcs Chicken",
-                            "Fries",
-                            "Coke",
-                            "2pcsChickenMeal",
-                            11.30F);
-                    orderList.add(_2pcsChickenMeal);
-                    break;
-
-                case 2:
-                    ValueMeal _3pcsChickenMeal = new ValueMeal(
-                            "3pcs Chicken",
-                            "Fries",
-                            "Coke",
-                            "3pcsChickenMeal",
-                            13.70F);
-                    orderList.add(_3pcsChickenMeal);
-                    break;
-
-                case 3:
-                    ValueMeal shroomsBurgerMeal = new ValueMeal(
-                            "Shrooms Burger",
-                            "Fries",
-                            "Coke",
-                            "ShroomsBurgerMeal",
-                            6.90F);
-                    orderList.add(shroomsBurgerMeal);
-                    break;
-            }
-
-            // Ask if user wants to continue ordering
-            System.out.println("Would you like to continue ordering? (y/n)");
-            scan.nextLine();
             String continueOrder = scan.nextLine();
 
             if (continueOrder.toLowerCase().equals("n")) {
+
                 break;
+
+            } else if(!continueOrder.toLowerCase().equals("y")) {
+
+                System.out.println("Please provide a valid input y or n");
+                continueOrderMessage();
+
+            } else {
+
+                selectMeal(scan);
+                continueOrderMessage();
+                scan.nextLine();
+
             }
 
         }
