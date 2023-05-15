@@ -9,7 +9,7 @@ Click on the link below to view the better resolution payment UML diagram.
 
 
 ### Inheritance:
-GenernalPayment class *implements* the Payment Interface to inherit the Payment methods.
+GeneralPayment class *implements* the Payment Interface to inherit the Payment methods.
 
 While the McDonaldsPayment class and KFCPayment class *extends* the GeneralPayment class to inherits the GeneralPayment methods.
 
