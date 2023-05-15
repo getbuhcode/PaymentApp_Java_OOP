@@ -9,5 +9,10 @@ Click on the link below to check out the better resolution the payment UML diagr
 
 xfun::embed_file("Payment_UML_Diagram.pdf")
 
+<object data="https://github.com/getbuhcode/PaymentApp_Java_OOP/Payment_UML_Diagram.pdf" type="application/pdf" width="700px" height="700px">
+    <embed src="https://github.com/getbuhcode/PaymentApp_Java_OOP/Payment_UML_Diagram.pdf">
+    </embed>
+</object>
+
 ![Payment UML Diagram](Payment_UML_Diagram.pdf)
 
